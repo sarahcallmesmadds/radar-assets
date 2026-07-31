@@ -1,12 +1,45 @@
-# Radar cover + icon assets
+# Systems Radar
 
-Public image host for the Systems & Tools Radar Notion database covers and icons, and a
+An honest map of the revenue and go-to-market systems world, plus the logo library that
+illustrates it. Built to close the gap between the tools I have personally run and the full
+landscape I am expected to know.
+
+This repo is **public**. Read the scope rules at the bottom before adding anything.
+
+## The map
+
+- **`MAP.md`**: the breadth layer. Every category of tool a revenue/GTM operation can have,
+  with a plain description, the trigger for when you actually need one (what breaks without
+  it), and the real players. So no whole category blindsides me again.
+- **`entries/`**: the depth layer. Ground-truth reads on specific tools and capabilities:
+  what they really do against what the marketing says, real cost, where they break.
+- **`entries/_TEMPLATE.md`**: the required shape for every entry.
+- **`BACKLOG.md`**: the to-research list, kept in priority order.
+
+### How to use it
+
+Point Claude or Codex at this folder and ask across the whole thing, for example:
+
+- "For a company with usage-based pricing and an enterprise sales motion, which categories are non-negotiable and which can wait?"
+- "Which AI capabilities actually deliver and which are hype?"
+- "What breaks in a company that does not have a metering tool?"
+
+See `AGENTS.md` for the method: how to research a topic into an entry, how to add to the
+backlog, and the rules every entry follows. Codex reads `AGENTS.md` automatically. In Claude
+Code, run the `school-me` skill, which points at the same instructions.
+
+### Rules for entries
+
+- Ground truth, not vendor copy. If it reads like a website, it is not done.
+- Every entry answers: what it really does, what it costs, where it breaks, and the
+  two-sentence version I would say out loud if asked cold.
+- Real against hype is always marked.
+
+## The logo library
+
+`covers/` holds wide cover images, one per tool. `icons/` holds square icons, one per tool.
+Together they are the image host for the Systems & Tools Radar Notion database, and a
 general-purpose logo library for decks.
-
-- `covers/` — wide cover images, one per tool
-- `icons/` — square icons, one per tool
-
-## Using these
 
 Link to the raw URL:
 
@@ -14,13 +47,13 @@ Link to the raw URL:
 https://raw.githubusercontent.com/sarahcallmesmadds/radar-assets/main/icons/Salesforce.webp
 ```
 
-Point Claude at a folder path and it can pick the right logo for a deck without you
-hunting for one.
+Point Claude at a folder path and it can pick the right logo for a deck without you hunting
+for one.
 
-## Naming convention
+### Naming convention
 
-Filenames are the contract. URLs are referenced from Notion and from decks, so **renaming
-an existing file breaks live links.** Add new files, do not rename old ones.
+Filenames are the contract. URLs are referenced from Notion and from decks, so **renaming an
+existing file breaks live links.** Add new files, do not rename old ones.
 
 1. **TitleCase, underscores between words.** `Google_Drive.png`, `LinkedIn_Sales_Navigator.png`.
    Lowercase brand names that are genuinely lowercase stay as they are: `n8n.png`.
@@ -35,5 +68,10 @@ an existing file breaks live links.** Add new files, do not rename old ones.
 
 ## Scope
 
-This repo is public and holds third-party product logos only. Screenshots, personal
-images, and anything showing session or account content do not belong here.
+This repo is public. It holds third-party product logos, and honest research on the tooling
+landscape.
+
+**Never in here:** screenshots, personal images, anything showing session or account content,
+and the name of any current employer, prospective employer, colleague or customer. An entry
+can describe a category or a vendor's product honestly. It cannot say who runs what, or what
+is weak about a named company's stack.
