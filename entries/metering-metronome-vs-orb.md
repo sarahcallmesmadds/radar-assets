@@ -71,4 +71,7 @@ Metering is the box people underestimate and the one most likely to quietly leak
 
 ---
 ### Rules (do not delete)
-- Ground truth, not vendor copy. If a section reads like a marketing page, it isn't done.\n- Real vs hype is always marked.\n- Label estimates as estimates and motivated sources as motivated.\n- Plain English throughout. No jargon without a short definition inline.
+- Ground truth, not vendor copy. If a section reads like a marketing page, it isn't done.
+- Real vs hype is always marked.
+- Label estimates as estimates and motivated sources as motivated.
+- Plain English throughout. No jargon without a short definition inline.
