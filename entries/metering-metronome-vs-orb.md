@@ -12,6 +12,9 @@ Software that captures usage events (an API call, a credit spent, a gigabyte pro
 - **Aggregation at scale.** Adding up millions or billions of events without dropping any, fast enough that a customer can't blow past their limit before anyone notices.
 - **Reconciliation.** A clean audit trail so finance can prove the invoice is right. This is the part that makes it a real system, not a counter.
 
+## What it genuinely does well
+A real metering tool turns a stream of raw product events into a count you can put on an invoice and defend when a customer disputes it. That means counting once and only once when events arrive twice, filling gaps when a system was down, and aggregating across time and across systems, in near real time rather than at month end. The enterprise-grade ones also model the contract constructs finance actually sells on: commitments, prepaid credits, and drawdowns against them. None of this is conceptually hard. All of it is tedious and unforgiving to build yourself, which is the case for buying rather than building.
+
 ## The two names to know
 **Metronome** (now owned by Stripe): the enterprise, infrastructure-grade choice. Built for very high event volume (pre-summarized ingestion at scale), plugs straight into infrastructure monitoring tools (CloudWatch, Datadog) so technical usage becomes billable without extra code, and handles complex enterprise contracts (commitments, credits, drawdowns). The catch: it leans on engineering. Most companies build custom data pipelines before going live.
 
@@ -27,6 +30,13 @@ Neither publishes pricing, which tells you it's enterprise sales-led and negotia
 - **Metering lag causes bill disputes.** If the count runs behind, customers exceed limits without warning and then argue the invoice. Real-time is a requirement, not a nice-to-have.
 - **Tax on variable amounts and "bill shock"** are recurring pain. When the bill changes every month, customers panic and finance scrambles, so you need alerts and caps built in.
 - **Metering is not entitlements.** These tools count usage; they don't necessarily control access to features. Assuming metering also gates the product is a common and costly mistake (see the entitlements box on the map).
+
+## Adoption reality: hype vs real
+**Real.** Usage-based pricing is mainstream enough that three independent metering specialists were acquired inside six months, at prices that only make sense if the buyers expect this to be infrastructure rather than a niche. That is the market voting with money, not a vendor claiming a trend.
+
+**Hype.** That buying a meter solves metering. Every failure mode in "Where it breaks" above is an engineering problem the tool does not remove: idempotency, backfill, aggregation, and keeping the count current enough that customers do not argue the invoice. Teams sink months here after the purchase, not before it.
+
+**Unverified, and worth treating as an open question.** How many companies run these tools well as against how many bought one and still reconcile in spreadsheets. Nothing in the sources below measures that.
 
 ## The 2026 consolidation (the sharp, current fact)
 In under six months, every major independent metering specialist was acquired:
@@ -58,3 +68,7 @@ Metering is the box people underestimate and the one most likely to quietly leak
 - Why usage-based billing is an engineering problem (Flexprice): https://flexprice.io/blog/why-usage-based-billing-is-an-engineering-problem
 - Metronome alternatives and the entitlements gap (Stigg): https://www.stigg.io/blog-posts/metronome-alternatives
 - Best billing alternatives 2026 (Solvimon): https://www.solvimon.com/blog/best-billing-systems-in-2026
+
+---
+### Rules (do not delete)
+- Ground truth, not vendor copy. If a section reads like a marketing page, it isn't done.\n- Real vs hype is always marked.\n- Label estimates as estimates and motivated sources as motivated.\n- Plain English throughout. No jargon without a short definition inline.

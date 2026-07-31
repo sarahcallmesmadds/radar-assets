@@ -20,7 +20,7 @@ This repo is **public**. Read the scope rules at the bottom before adding anythi
 
 Point Claude or Codex at this folder and ask across the whole thing, for example:
 
-- "For a usage-based legal-AI company, which categories are non-negotiable and which can wait?"
+- "For a company with usage-based pricing and an enterprise sales motion, which categories are non-negotiable and which can wait?"
 - "Which AI capabilities actually deliver and which are hype?"
 - "What breaks in a company that does not have a metering tool?"
 

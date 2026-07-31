@@ -42,7 +42,7 @@ Two pricing worlds, and you must pick one per Salesforce org (you cannot mix the
 - **Pure-play service agents (Sierra, Decagon, Ada, Fin)** often show deeper resolution proof, especially high-volume, multilingual, FAQ-style support. Decagon and Sierra are the names to know there.
 - **Build-your-own** on the platform is the third path when you have the engineering and want control. The practitioner decision is basically: how Salesforce-native are you, how clean is your data, and do you want a packaged agent or a custom one.
 
-## Data & trust angle (matters for a company selling trust, like legal AI)
+## Data & trust angle
 The Einstein Trust Layer is Salesforce's answer to "where does our data go": it masks sensitive data, does not retain prompts for model training, and keeps processing inside the trust boundary. For a business whose whole pitch is protecting client data, that boundary is exactly the thing to interrogate before turning agents loose on anything sensitive. Good talking point, not a closed question.
 
 ## Bottom line
@@ -61,3 +61,7 @@ Real product with real, narrow wins in service, wrapped in far more hype than it
 - Is Data Cloud required (solvd): https://solvd.cloud/is-data-cloud-mandatory-for-deploying-agentforce/
 - Agentforce limitations (apexhours): https://www.apexhours.com/agentforce-limitations-and-workarounds/
 - Agentforce vs Copilot vs build (clarityarc): https://www.clarityarc.com/insights/copilot-vs-agentforce-vs-build-your-own
+
+---
+### Rules (do not delete)
+- Ground truth, not vendor copy. If a section reads like a marketing page, it isn't done.\n- Real vs hype is always marked.\n- Label estimates as estimates and motivated sources as motivated.\n- Plain English throughout. No jargon without a short definition inline.

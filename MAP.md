@@ -208,4 +208,4 @@
 ## What's next
 - **Depth entries** go under each category, starting with the AI ones: Agentforce first (what it really does vs the keynote, cost, where it breaks).
 - **Verify & personalize the player lists** against your own network and honest third-party reads, not vendor sites.
-- **Query layer:** once depth fills in, ask Claude/Codex across the whole map ("for a usage-based legal-AI company, which boxes are non-negotiable and which can wait").
+- **Query layer:** once depth fills in, ask Claude/Codex across the whole map ("for a company with usage-based pricing and an enterprise sales motion, which boxes are non-negotiable and which can wait").
