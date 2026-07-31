@@ -140,6 +140,10 @@
 *Need it when:* you have repetitive judgment work to hand off and clean enough data to trust it. (Agentforce is the first depth entry to build here.)
 *Players:* Salesforce Agentforce, Sierra, Clay agents, 11x, Regie
 
+**AI harness / gateway**: the control layer between your applications and the model APIs. Manages token limits, cost caps, prompt storage, output validation, model routing, logging, and fallbacks. Not a testing-only concept: a production harness wraps every model call your agents make so you have visibility and control.
+*Need it when:* multiple people are building agents, nobody can answer "how much are we spending on AI" confidently, or a runaway agent could rack up a real bill. Before that, calling the API directly is fine.
+*Players:* Often custom-built (a shared Python module or internal gateway). Emerging products: Portkey, Helicone, LiteLLM (open-source proxy that handles model routing and fallbacks), Braintrust, LangSmith. The model provider consoles (Anthropic Console, OpenAI Dashboard) cover logging and billing but not token limits, routing, or fallbacks.
+
 **Workflow automation / orchestration**: connects tools and runs multi-step processes without custom code.
 *Need it when:* work falls through the cracks between tools and people are copy-pasting between them.
 *Players:* Zapier, Workato, n8n, Tray.ai
