@@ -13,7 +13,7 @@ Software that captures usage events (an API call, a credit spent, a gigabyte pro
 - **Reconciliation.** A clean audit trail so finance can prove the invoice is right. This is the part that makes it a real system, not a counter.
 
 ## The two names to know
-**Metronome** (now owned by Stripe): the enterprise, infrastructure-grade choice. Built for very high event volume (pre-summarized ingestion at scale), plugs straight into infrastructure monitoring tools (CloudWatch, Datadog) so technical usage becomes billable without extra code, and handles complex enterprise contracts (commitments, credits, drawdowns). The catch: it leans on engineering. Most companies build custom data pipelines before going live. It is the common choice among usage-priced legal-AI vendors.
+**Metronome** (now owned by Stripe): the enterprise, infrastructure-grade choice. Built for very high event volume (pre-summarized ingestion at scale), plugs straight into infrastructure monitoring tools (CloudWatch, Datadog) so technical usage becomes billable without extra code, and handles complex enterprise contracts (commitments, credits, drawdowns). The catch: it leans on engineering. Most companies build custom data pipelines before going live.
 
 **Orb** (now owned by Adyen): the developer-friendly, faster-to-launch choice. You define what you're metering in plain database queries, get real-time usage dashboards, and it has one feature Metronome doesn't document: pricing simulation, meaning you can test a pricing change against your real historical usage before you roll it out. Lighter engineering lift, guided setup.
 

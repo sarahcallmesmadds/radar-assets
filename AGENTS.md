@@ -1,15 +1,15 @@
-# AGENTS.md — how to work in this repo
+# AGENTS.md: how to work in this repo
 
 This is Sarah's personal knowledge base on the revenue and go-to-market systems world. It exists to keep her sharp on tools, systems, and AI in her field, and to be queried with an AI assistant. This file is the shared brain: it works for Codex (which reads AGENTS.md automatically), for Claude Code (via the `school-me` skill, which points here), and for a human.
 
 **This repo is public.** Everything written here is readable by anyone, including the companies it discusses. See "What never goes in here" below before writing an entry.
 
 ## What's here
-- `MAP.md` — the breadth layer. Every category of revenue/GTM tool, with a plain description, the TRIGGER (when you actually need one / what breaks without it), and the real players.
-- `entries/` — the depth layer. Honest, ground-truth reads on specific tools (what they really do vs marketing, real cost, where they break).
-- `entries/_TEMPLATE.md` — the required shape for every entry.
-- `BACKLOG.md` — the to-research checklist, kept in priority order.
-- `covers/` and `icons/` — the logo library, one image per tool. Filenames are a contract: they are referenced by raw URL from Notion and from decks, so never rename an existing file. See the README.
+- `MAP.md`: the breadth layer. Every category of revenue/GTM tool, with a plain description, the TRIGGER (when you actually need one / what breaks without it), and the real players.
+- `entries/`: the depth layer. Honest, ground-truth reads on specific tools (what they really do vs marketing, real cost, where they break).
+- `entries/_TEMPLATE.md`: the required shape for every entry.
+- `BACKLOG.md`: the to-research checklist, kept in priority order.
+- `covers/` and `icons/`: the logo library, one image per tool. Filenames are a contract: they are referenced by raw URL from Notion and from decks, so never rename an existing file. See the README.
 
 ## What never goes in here
 The name of any current employer, prospective employer, colleague or customer. An entry may describe a category or a vendor's product honestly. It may not say who runs what, or what is weak about a named company's stack. That reads as research on a target rather than knowledge of a market, and the target can read it.

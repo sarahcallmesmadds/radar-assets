@@ -8,13 +8,13 @@ This repo is **public**. Read the scope rules at the bottom before adding anythi
 
 ## The map
 
-- **`MAP.md`** — the breadth layer. Every category of tool a revenue/GTM operation can have,
+- **`MAP.md`**: the breadth layer. Every category of tool a revenue/GTM operation can have,
   with a plain description, the trigger for when you actually need one (what breaks without
   it), and the real players. So no whole category blindsides me again.
-- **`entries/`** — the depth layer. Ground-truth reads on specific tools and capabilities:
+- **`entries/`**: the depth layer. Ground-truth reads on specific tools and capabilities:
   what they really do against what the marketing says, real cost, where they break.
-- **`entries/_TEMPLATE.md`** — the required shape for every entry.
-- **`BACKLOG.md`** — the to-research list, kept in priority order.
+- **`entries/_TEMPLATE.md`**: the required shape for every entry.
+- **`BACKLOG.md`**: the to-research list, kept in priority order.
 
 ### How to use it
 
