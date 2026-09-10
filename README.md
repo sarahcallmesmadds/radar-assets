@@ -66,6 +66,19 @@ existing file breaks live links.** Add new files, do not rename old ones.
 5. **One image per tool per folder.** If you have two versions, pick the one that looks
    right at small size and keep the other locally.
 
+### Intentional shared artwork
+
+Some distinct Radar rows use the same parent-brand artwork. Keep their separate filenames:
+each filename is a live, row-specific URL even when the image bytes match.
+
+- Claude family: `Chat`, `Claude_Design`, `Code`, `Cowork`, `Fable`, `Opus_4-8`, and
+  `Sonnet_4-6` icons, plus the `Claude` and `Chat` covers.
+- Gong family: `Gong` and `Gong_Engage` icons and covers.
+- Salesforce family: `Salesforce_Agentforce` and `Salesforce_Revenue_Cloud` icons.
+- Stripe family: `Stripe` and `Stripe_Billing` icons.
+- Google Cloud covers: `BigQuery` and `Looker` use Google's current shared Cloud social
+  image, but their icons are product-specific.
+
 ## Scope
 
 This repo is public. It holds third-party product logos, and honest research on the tooling
